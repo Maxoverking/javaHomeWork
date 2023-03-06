@@ -8,8 +8,8 @@ public class HW_Dict {
 
         Map<String, String> dictionary = readFileAndMapIt();
 
-        List<String> inputWrds = inputValue();
-        for (String word : inputWrds) {
+        List<String> inputWords = outputValue();
+        for (String word : inputWords) {
             if (dictionary.keySet().contains(word)) {
                 System.out.println(dictionary.get(word));
             } else {
@@ -35,16 +35,16 @@ public class HW_Dict {
         return null;
     }
 
-    public static List<String> inputValue() {
-        try (BufferedReader read = new BufferedReader(new InputStreamReader(System.in))) {
+    public static List<String> outputValue() {
+        try (BufferedReader readInput = new BufferedReader(new InputStreamReader(System.in))) {
 
-            List<String> inputWords = new ArrayList<>();
+            List<String> addToList = new ArrayList<>();
 
-            int m = Integer.parseInt(read.readLine());
+            int m = Integer.parseInt(readInput.readLine());
             for (int i = 0; i < m; i++) {
-                inputWords.add(read.readLine().toLowerCase());
+                addToList.add(readInput.readLine().toLowerCase());
             }
-            return inputWords;
+            return addToList;
         } catch (NumberFormatException | IOException e) {
             System.out.println(e.getMessage());
         }
