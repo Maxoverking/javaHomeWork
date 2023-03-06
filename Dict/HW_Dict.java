@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.*;
 
 public class HW_Dict {
-
     public static void main(String[] args) throws IOException {
 
         Map<String, String> dictionary = readFileAndMapIt();
