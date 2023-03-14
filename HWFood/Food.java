@@ -4,9 +4,9 @@ public class Food {
 
     private String meal;
 
-    private Double calories;
+    private int calories;
 
-    public Food(String meal, Double calories) {
+    public Food(String meal, int calories) {
         this.meal = meal;
         this.calories = calories;
     }
@@ -15,7 +15,7 @@ public class Food {
         return meal;
     }
 
-    public Double getCalories() {
+    public int getCalories() {
         return calories;
     }
 
@@ -23,7 +23,7 @@ public class Food {
         this.meal = meal;
     }
 
-    public void setCalories(Double calories) {
+    public void setCalories(int calories) {
         this.calories = calories;
     }
 

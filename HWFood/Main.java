@@ -19,9 +19,9 @@ package HWFood;
 
 public class Main {
     public static void main(String[] args) {
-        Food burger = new Food("Burger", 123.4);
+        Food burger = new Food("Burger", 320);
         burger.eatMeal();
-        Drink drink = new Drink("Burger", 123.4, false, true);
+        Drink drink = new Drink("Burger", 532, false, true);
         drink.open();
     }
 }
