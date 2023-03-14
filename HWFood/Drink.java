@@ -9,9 +9,7 @@ public class Drink extends Food {
     private boolean soda;
     private boolean alcohol;
 
-    public Drink(
-            String meal, Double calories,
-            boolean soda, boolean alcohol) {
+    public Drink(String meal, Double calories, boolean soda, boolean alcohol) {
         super(meal, calories);
         this.soda = soda;
         this.alcohol = alcohol;
