@@ -5,13 +5,10 @@ public class Triangle {
     public Triangle(int a, int b, int c) {
         if (a <= 0 || b <= 0 || c <= 0) {
             System.out.println("Стороны не могут быть отрицательные");
-            return;
         } else if (!checkSides(a, b, c)) {
             System.out.println("Стороны не образуют треугольник");
-            return;
         } else {
             System.out.println("Tреугольник получился");
-            return;
         }
     }
 

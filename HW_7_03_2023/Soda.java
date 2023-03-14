@@ -8,6 +8,8 @@ public class Soda {
     }
 
     public String GetMyDrinkString() {
-        return addition != null && !addition.isEmpty() ? "Газировка и " + addition : "Обычная газировка";
+        boolean con = addition != null && !addition.isEmpty();
+        return con ? "Газировка и " + addition : "Обычная газировка";
     }
+
 }
